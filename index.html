@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="principal">
+      <img src="./img/bag.png" alt="sacola de compras" />
+      <form>
+        <input
+          class="input-item"
+          id="input-item"
+          type="text"
+          placeholder="Digite o item que deseja adicionar"
+        />
+        <button class="button-item" id="adicionar-item" type="button">Salvar item</button>
+      </form>
+
+      <div class="container-lista">
+        <div class="tittle-lista_compras">
+        <h2>Lista de compras</h2>
+        <hr />
+        </div>
+        
+        <ul id="lista-de-compras">
+          <p class="mensagem_lista-vazia">Sua lista está vazia. Adicione itens a ela para não esquecer nada na próxima compra!</p>
+        </ul>
+
+        <div class="div_lista-comprados" style="display: none;">
+          <h2>Comprado</h2>
+          <hr />
+          
+          <ul id="lista-de-comprados">
+          </ul>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <h3>Editar nome</h3>
+          <input type="text" id="novoNome">
+          <div class="botoes">
+            <button class="cancelar" type="button">Cancelar</button>
+            <button class="salvar" type="button">Salvar</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
